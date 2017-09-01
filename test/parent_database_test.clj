@@ -20,9 +20,9 @@
 ")
 
 (deftest parent-database-fact-test
-  (testing "varon(juan) should be false"
+  (testing "varon(juan) should be true"
     (is (= (evaluate-query parent-database "varon(juan)")
-           false)))
+           true)))
   (testing "varon(maria) should be false"
     (is (= (evaluate-query parent-database "varon(maria)")
            false)))
